@@ -200,7 +200,8 @@
   .tutedude-learn {
     padding: 50px 32px 50px;
   }
-  .tutedude-learn-image {
+  .tutedude-learn-image,
+  .tutedude-learn-gradient {
     display: none;
     width: 0;
   }
