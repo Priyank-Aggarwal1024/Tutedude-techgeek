@@ -1,0 +1,136 @@
+.techgeek-navbar {
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  height: 80px;
+  flex-shrink: 0;
+  padding: 8px 16px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.techgeek-logo-small {
+  display: none;
+}
+
+.techgeek-nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.techgeek-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-right: 100px;
+}
+
+.techgeek-nav-left {
+  padding-left: 100px;
+}
+
+.techgeek-nav-login-btn {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.5%;
+  /* 19.76px */
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #800080 3.92%, #b466c1 52.78%, #800080 92.42%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  padding: 14px 39px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7.998px;
+  border: 1px solid var(--Linear, #800080);
+  box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
+}
+
+.techgeek-nav-signup-btn {
+  display: flex;
+  padding: 14px 41px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7.998px;
+  background: var(--800080, rgba(128, 0, 128, 0.87));
+  box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
+  color: var(--Color-2, #fff);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.5%;
+}
+
+@media (width<1180px) {
+  .techgeek-nav-btn {
+    padding-right: 32px;
+  }
+
+  .techgeek-nav-left {
+    padding-left: 32px;
+  }
+}
+
+@media (width<980px) {
+  .techgeek-nav-btn {
+    padding-right: 16px;
+  }
+
+  .techgeek-nav-left {
+    padding-left: 16px;
+  }
+
+  .techgeek-nav-list {
+    display: none;
+  }
+}
+
+@media (width<780px) {
+  .techgeek-nav-btn {
+    padding: 0;
+  }
+
+  .techgeek-nav-left {
+    padding-left: 0px;
+  }
+
+  .techgeek-nav-login-btn {
+    font-size: 12px;
+    padding: 8.5px 27px;
+  }
+
+  .techgeek-nav-signup-btn {
+    font-size: 12px;
+    padding: 8.5px 20px;
+  }
+
+  .techgeek-navbar {
+    height: 72px;
+  }
+
+  .techgeek-logo-large {
+    display: none;
+  }
+
+  .techgeek-logo-small {
+    display: inline;
+  }
+}
+
+@media (width<355px) {
+  .techgeek-nav-login-btn,
+  .techgeek-nav-signup-btn {
+    padding: 8.5px 12px;
+  }
+}

@@ -1,0 +1,57 @@
+.certificate {
+  padding: 56px 96px 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  /* z-index: 2; */
+}
+.certificate-main {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.certificate-image {
+  max-width: 100%;
+  position: relative;
+  z-index: 3;
+}
+.techgeek-certificate-heading {
+  max-width: 685px;
+}
+.techgeek-certificate-bottom {
+  color: #000;
+  font-family: Inter;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.techgeek-certificate-bottom span {
+  font-family: Inter;
+}
+@media (width<780px) {
+  .techgeek-certificate-bottom {
+    font-size: 30px;
+  }
+}
+@media (width<580px) {
+  .certificate {
+    padding: 35px 16px 28px;
+    gap: 20px;
+  }
+  .techgeek-certificate-bottom {
+    font-size: 20px;
+  }
+  .certificate-main {
+    justify-content: center;
+  }
+  .certificate-image {
+    max-width: 80%;
+  }
+}
+@media (width<400px) {
+}

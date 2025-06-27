@@ -1,0 +1,368 @@
+.hero-yellow-strip1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-line-bg {
+  position: absolute;
+  background: rgba(80, 77, 81, 0.5);
+  display: flex;
+  width: 90%;
+  height: 2px;
+  z-index: 2;
+  align-items: center;
+}
+
+.hero-line-bg-circle {
+  position: absolute;
+  width: 100%;
+
+  animation: moveCircle 3s linear infinite;
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+.hero-yellow-text {
+  border-radius: 5px;
+  border: 1px solid #800080;
+  background: #fff;
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 10px;
+  z-index: 3;
+  color: #800080;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  font-size: clamp(16px, 1.5vw, 20px);
+}
+.hero-section > div {
+  width: 50% !important;
+}
+@media (width<980px) {
+  .hero-section > div {
+    width: 100% !important;
+  }
+}
+
+.new-hero-ctm-upskill-cont {
+  padding: 0 !important;
+}
+#new-designs-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+  overflow: hidden;
+
+  padding: 70px 64px 32px 128px;
+
+  .h-full {
+    height: 100%;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-left-iit {
+    display: flex;
+    padding: 10px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    border: 1px solid #800080;
+    background: #fff;
+    width: fit-content;
+  }
+
+  .hero-left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .main-heading {
+    line-height: 120%;
+    max-height: 264px;
+    font-size: clamp(36px, 4vw, 55px);
+  }
+
+  .hero-left-bottom-card {
+    display: flex;
+    gap: 0px;
+  }
+
+  .hlbc-card {
+    display: flex;
+    align-items: center;
+  }
+
+  .hlbc-card-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 0, 128, 0.7);
+    height: 72px;
+  }
+
+  .hero-left-svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-right {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero-right-design {
+    position: absolute;
+    right: -80px;
+    top: -300px;
+    fill: var(
+      --Linear,
+      linear-gradient(
+        188deg,
+        rgba(128, 0, 128, 0.3) 6.4%,
+        rgba(255, 134, 76, 0.08) 42.44%
+      )
+    );
+    opacity: 0.7;
+  }
+
+  .small-hero-design {
+    display: none;
+  }
+
+  .hero-right-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-right-image > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-speciallycrafted-para {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 124.968%;
+    /* 24.994px */
+    max-width: 381px;
+  }
+
+  .hlbc-card-right {
+    width: 24px;
+    height: 4px;
+    background-color: gray;
+  }
+
+  .hero-price-sec {
+    display: flex;
+    height: 114px;
+    padding: 20px 11px;
+    align-items: center;
+    gap: 48px;
+    border-radius: 17px;
+    background: #fff2ff;
+    width: fit-content;
+  }
+  .hero-ps-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .hero-psl-orgprice {
+    color: #000;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%;
+    /* 47.063px */
+  }
+  .hero-psl-discprice-outer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .hero-psl-discprice {
+    color: #000;
+    opacity: 0.6;
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: line-through;
+  }
+
+  .hero-ps-right {
+    display: flex;
+    min-width: 226px;
+    height: 66px;
+    padding: 20px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border-radius: 17px;
+    background: #902190;
+    box-shadow: 0px 8px 35px 0px rgba(86, 88, 85, 0.26);
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .hero-psl-discoff {
+    display: flex;
+    width: 94px;
+    height: 30px;
+    padding: 3px 9px 3px 14px;
+    align-items: center;
+    border-radius: 19px;
+    border: 0.7px solid rgba(255, 255, 255, 0.44);
+    background: #1e7b10;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  @media (width<980px) {
+    flex-direction: column;
+    padding: 64px 32px;
+    .hero-right {
+      margin-top: 48px;
+    }
+
+    .main-heading {
+      font-size: 55px;
+      max-height: none;
+      width: 70%;
+    }
+
+    .hero-right {
+      display: none;
+    }
+    .hero-price-sec {
+      width: 100%;
+      height: fit-content;
+      padding: 14px 8px;
+    }
+  }
+
+  @media (width<780px) {
+    padding: 64px 32px;
+    .main-heading {
+      font-size: 45px;
+      width: 100%;
+    }
+
+    .hlbc-card-left {
+      height: 52px;
+    }
+
+    .hero-ps-right {
+      font-size: 16px;
+    }
+    .hero-ps-left {
+      gap: 9px;
+    }
+  }
+
+  @media (width<580px) {
+    padding: 48px 16px;
+
+    .hero-left-svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .hero-psl-discprice {
+      font-size: 16px;
+    }
+
+    .hero-psl-orgprice {
+      font-size: 26px;
+    }
+
+    .hero-right {
+      gap: 12px;
+    }
+
+    .hlbc-card {
+      gap: 3px;
+    }
+    .hero-psl-discoff {
+      font-size: 11px;
+      padding: 2px 10px;
+    }
+    .hero-ps-right {
+      height: 48px;
+      padding: 13px 20px;
+      min-width: 160px;
+      font-size: 16px;
+    }
+    .hero-price-sec {
+      gap: 30px;
+    }
+  }
+
+  @media (width<480px) {
+    .main-heading {
+      font-size: 34px;
+    }
+
+    .hlbc-card-left {
+      padding: 12px 12px;
+      height: fit-content;
+    }
+    .hero-ps-right {
+      min-width: unset;
+    }
+    .hero-psl-discoff {
+      width: fit-content;
+    }
+  }
+
+  @media (width<330px) {
+    .hero-right {
+      flex-wrap: wrap;
+    }
+  }
+}

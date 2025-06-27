@@ -1,0 +1,221 @@
+.techgeek-c-heading {
+  color: #902190;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  /* 106.667% */
+  letter-spacing: -0.9px;
+  max-width: 531px;
+}
+
+.techgeek-curriculum {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.techgeek-c-middle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 953px;
+  gap: 36px;
+  padding-top: 18px;
+}
+
+.techgeek-c-middle > p {
+  display: flex;
+  padding: 10px 6px 10px 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  color: #585858;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140.595%;
+  /* 22.495px */
+  border-radius: 10px;
+  background: #fef8fe;
+  box-shadow: 0px 4px 6.3px 0px rgba(210, 210, 210, 0.25);
+}
+
+.techgeek-c-bottom {
+  display: grid;
+  max-width: 911px;
+  column-gap: 33px;
+  row-gap: 19px;
+  padding-top: 58px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.techgeek-cb-card {
+  display: flex;
+
+  width: 100%;
+  border-radius: 15.273px;
+  background: var(--Color-2, #fff);
+  box-shadow: 3.818px 5.091px 6.109px 0px rgba(135, 135, 135, 0.19);
+}
+
+.techgeek-cbc-left {
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(187deg, #b31dc5 -1.66%, #590e59 93.28%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 15.273px;
+  border-bottom-left-radius: 15.273px;
+}
+
+.techgeek-cbc-right {
+  padding: 20px 15px;
+  width: 100%;
+}
+
+.techgeek-cbcr-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 58.545px;
+  border: 1.273px solid #b31dc5;
+
+  box-shadow: 0px 5.446px 12.117px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(187deg, #b31dc5 -1.66%, #590e59 93.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15.273px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.5%;
+  gap: 3px;
+  cursor: pointer;
+  /* 18.862px */
+}
+
+.techgeek-cbcr-top {
+  width: 100%;
+  display: flex;
+  align-items: flesx-start;
+  justify-content: space-between;
+}
+
+.techgeek-card-heading {
+  color: #3d3d3d;
+  font-family: Poppins;
+  font-size: 25.913px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140.595%;
+  /* 36.432px */
+}
+
+.techgeek-cbcrt-right {
+  font-family: Poppins;
+  font-size: 76.364px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120.595%;
+  /* 107.363px */
+  opacity: 0.1;
+  margin-top: -10px;
+  background: linear-gradient(187deg, #b31dc5 -1.66%, #590e59 93.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.techgeek-card-duration {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (width<1024px) {
+  .techgeek-c-heading {
+    font-size: 40px;
+  }
+}
+
+@media (width<780px) {
+  .techgeek-c-heading {
+    font-size: 36px;
+  }
+
+  .techgeek-c-middle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .techgeek-c-middle > p {
+    font-size: 14px;
+  }
+
+  .techgeek-c-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width<580px) {
+  .techgeek-c-heading {
+    font-size: 30px;
+  }
+
+  .techgeek-card-heading {
+    font-size: 20px;
+  }
+
+  .techgeek-card-duration {
+    font-size: 14px;
+  }
+
+  .techgeek-cbcrt-right {
+    font-size: 60px;
+  }
+
+  .techgeek-cbcr-bottom {
+    padding: 7px 11px;
+  }
+
+  .techgeek-cbc-right {
+    padding: 12px 15px;
+  }
+
+  .techgeek-c-bottom {
+    padding-top: 24px;
+  }
+
+  .techgeek-cbc-left > img {
+    max-width: 100%;
+  }
+  .techgeek-cbcr-bottom-eye {
+    width: 20px;
+    height: 20px;
+  }
+  .techgeek-cbc-left-img {
+    width: 35px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+  .techgeek-card-duration img {
+    width: 15px;
+  }
+}
+
+@media (width<360px) {
+  .techgeek-c-middle {
+    grid-template-columns: 1fr;
+  }
+}
